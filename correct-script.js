@@ -57,7 +57,10 @@ function createElements(hourValue, singleHour) {
 
     // Create click event for save button clicked that corresponds with the text input
     saveBtn.on("click", function(){
-        var newTaskValue = inputArea.val();
+        var newTaskValue = {
+            timeslot: singleHour,
+            note: inputArea.val()
+        };
         console.log(newTaskValue);
         savedArr.push(newTaskValue);
         console.log(savedArr)
@@ -89,7 +92,14 @@ function createElements(hourValue, singleHour) {
     function renderTasks() {
         if (savedTasks !== null) {
             savedArr = savedTasks;
-            inputArea.append(savedTasks);
+            
+            //inputArea.append(savedTasks);
+
+            for (let i = 0; i < savedTasks.length; i++) {
+                let targetTimeslot = savedTasks[i].timeslot;
+                let targetNote = savedTasks[i].note;
+                $(`textarea[data-time=${targetTimeslot}]`).val(targetNote);
+            }
         }
     }
 }
