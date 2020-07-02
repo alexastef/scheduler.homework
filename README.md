@@ -1,10 +1,37 @@
-# scheduler.homework
-Creating a day schedule with dynamic elements
+# Day Scheduler
 
-For this assignment, I started with an html file with minimal html elements. I used Bootstrap for the most part for formatting and made some additions to provided CSS file. 
 
-From there I created my table dynamically using jQuery. I set the script inside a document.ready function and defined a few initial global variables, including hours 9-5 as an array. 
+## Description
+Dynamic day scheduler app that allows users to enter and save tasks for the work day. The app is color-coded by time, so the user knows if a time slot or task is in the past, present, or future. 
 
-To get all the elements on the page, I looped through the hours array and created an hour block, text area, and save button for each hour. I assigned values to each hour so that I could compare and updated them based on the current time. I also incorporated the save click event inside this function so that the save buttons save the text input in the corresponding value textarea. 
+[Demo here!](alexastef.github.io/scheduler.homework)
 
-I had some trouble getting the local storage, although it set. When I retrieve the local storage data, the entire array populates in every box instead of just the most recent saved text populating into every textarea. 
+![demo_image](https://i.imgur.com/3sXt2sK.png?1)
+
+
+## Table of Contents  
+* [Usage](#usage)  
+* [License](#license)
+* [Contributing](#contributing)  
+* [Questions?](#questions)  
+
+
+## Usage  
+To use this repo, user should be comfortable using JavaScript and jQuery for DOM manipulation. Bootstrap was used for most of the styling with some minor tweaks, like the buttons and different color text areas, customized with a CSS file. All the time slots could be hard-coded into the HTML, but for this project they were dynamically created. 
+
+
+
+## Author
+![user photo](https://avatars.githubusercontent.com/alexastef?size=100)
+- GitHub: [alexastef](https://github.com/alexastef)  
+- Portfolio: [alexastef.github.io](alexastef.github.io)
+
+Any questions? Contact me at alexa.c.stef@gmail.com
+
+## Contributing  
+Contributing is welcome! Feel free to email me to share your ideas.
+
+
+## License  
+None 
+
